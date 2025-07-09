@@ -1,4 +1,4 @@
-````markdown
+
 # iPhone OR Samsung
 
 A minimal image classifier that determines whether a photo shows an **iPhone** or a **Samsung** phone.  
@@ -9,13 +9,13 @@ This repository contains everything you need to run the classifier locally or in
 
 ## 1. Local Setup & Usage
 
-1. **Clone the repository**  
+ **Clone the repository**  
    ```bash
    git clone https://github.com/MohammedBosaid/iPhone-OR-Samsung.git
    cd iPhone-OR-Samsung
 ````
 
-2. **Install Python dependencies**
+## 2. Install Python dependencies
    (You can skip this if you already have them installed.)
 
    ```bash
@@ -25,7 +25,7 @@ This repository contains everything you need to run the classifier locally or in
    pip install tensorflow pillow numpy
    ```
 
-3. **Run the classifier**
+## 3. Run the classifier
 
    ```bash
    python classify_phone.py path/to/your_image.jpg
@@ -46,16 +46,16 @@ This repository contains everything you need to run the classifier locally or in
 
 ---
 
-## 2. Google Colab Usage
+## 4. Google Colab Usage
 
-1. **Open a new Colab notebook** at [https://colab.research.google.com](https://colab.research.google.com)
-2. **Upload** these files into Colab’s Files pane:
+- **Open a new Colab notebook** at [https://colab.research.google.com](https://colab.research.google.com)
+- **Upload** these files into Colab’s Files pane:
 
    * `classify_phone.py`
    * `labels.txt`
    * `keras_model.h5`
    * your test image(s)
-3. **Install dependencies & classify** in one cell:
+- **Install dependencies & classify** in one cell:
 
    ```python
    !pip install tensorflow pillow numpy
@@ -67,7 +67,7 @@ This repository contains everything you need to run the classifier locally or in
    for fname in uploaded.keys():
        predict_phone(fname)
    ```
-4. **View your results**: each filename prints its predicted class:
+- **View your results**: each filename prints its predicted class:
 
    ```
    your_image.jpg → Samsung
@@ -75,7 +75,7 @@ This repository contains everything you need to run the classifier locally or in
 
 ---
 
-## 3. File Details
+## 5. File Details
 
 * **`classify_phone.py`**
   Loads `keras_model.h5`, reads `labels.txt`, then prints:
