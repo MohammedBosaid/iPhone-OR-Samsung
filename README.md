@@ -3,16 +3,7 @@
 
 A minimal image classifier that determines whether a photo shows an **iPhone** or a **Samsung** phone.  
 This repository contains everything you need to run the classifier locally or in Google Colab.
-
----
-
-## Repository Contents
-
-- `README.md`  
-- `classify_phone.py` – Python script to load the model and predict on an input image  
-- `labels.txt`        – List of class names (one per line: `iPhone`, `Samsung`)  
-- `keras_model.h5`    – Pre-trained Keras model  
-- `Model Test.png`    – Example screenshot of the classifier output  
+ 
 
 ---
 
